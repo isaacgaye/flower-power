@@ -1,0 +1,116 @@
+/* Layout and Container Styles
+-------------------------------------------------- */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: system-ui, sans-serif;
+}
+
+/* Control Panel Layout
+-------------------------------------------------- */
+.controls {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.control-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* Form Elements
+-------------------------------------------------- */
+label {
+    font-weight: 700;
+}
+
+input[type=text] {
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    background: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background: #45a049;
+}
+
+/* Canvas and Visualization Area
+-------------------------------------------------- */
+.canvas-container {
+    position: relative;
+    border: 1px solid #ccc;
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+canvas {
+    cursor: move;
+}
+
+/* Zoom Controls and Info
+-------------------------------------------------- */
+.zoom-info {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+/* Color Palette Controls
+-------------------------------------------------- */
+.color-control {
+    margin-bottom: 20px;
+}
+
+.color-preview {
+    display: flex;
+    height: 20px;
+    margin-top: 5px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.color-preview div {
+    flex: 1;
+}
+
+/* Saved Patterns Section
+-------------------------------------------------- */
+.saved-patterns {
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+}
+
+.saved-pattern-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    background: #f5f5f5;
+    border-radius: 4px;
+}
+
+/* Override default button styles for saved pattern items */
+.saved-pattern-item button {
+    margin: 0 5px;
+    padding: 5px 10px;
+}
